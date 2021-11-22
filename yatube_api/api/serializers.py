@@ -6,6 +6,9 @@ from rest_framework.validators import UniqueTogetherValidator
 from posts.models import Comment, Post, Group, Follow, User
 
 SELF_FOLLOW_ERROR = 'Ошибка: Невозможно подписаться на самого себя.'
+UNIQUE_PAIR_ERROR = (
+    'Ошибка: Подписка с такими полями user и following уже существует.'
+)
 
 
 class PostSerializer(serializers.ModelSerializer):
@@ -51,7 +54,7 @@ class FollowSerializer(serializers.ModelSerializer):
             UniqueTogetherValidator(
                 queryset=Follow.objects.all(),
                 fields=['user', 'following'],
-                message=SELF_FOLLOW_ERROR
+                message=UNIQUE_PAIR_ERROR
             )
         ]
 

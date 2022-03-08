@@ -10,10 +10,7 @@ Api для проекта Yatube - сервиса для публикации д
 - Подписки на авторов
 
 ## Как запустить проект
-- Клонировать репозиторий и перейти в него
-```git clone https://github.com/Daxywf/api_final_yatube```
-
-```cd api_final_yatube```
+- Клонировать репозиторий и перейти в него ```git clone https://github.com/Daxywf/api_final_yatube``` ```cd api_final_yatube```
 
 При первом запуске
 - Выполнить миграции

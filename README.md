@@ -11,6 +11,7 @@ Api для проекта Yatube - сервиса для публикации д
 
 ## Как запустить проект
 - Клонировать репозиторий и перейти в него ```git clone https://github.com/Daxywf/api_final_yatube``` ```cd api_final_yatube```
+- Запустить сервер ```python manage.py runserver```
 
 При первом запуске
 - Выполнить миграции
